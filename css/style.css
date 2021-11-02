@@ -1,0 +1,590 @@
+@font-face {
+  font-family: Recoleta;
+  src: url('../fonts/recoleta/Recoleta-RegularDEMO.otf');
+}
+
+*
+*::after
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Recoleta";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+}
+
+#hero {
+  background-color: #163A24;
+  color: #fff;
+}
+
+header {
+  padding: 20px 0;
+  margin-bottom: 15px;
+}
+
+.row.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-list {
+  list-style: none;
+}
+
+.navbar-item {
+  margin-left: 24px;
+} 
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: right;
+  color: #FBFAF7;
+  text-transform: capitalize;
+}
+
+/* .navbar-item-after::after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 2px;
+  background-color: #f2f559;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.navbar-item:hover::after {
+  width: 100%;
+}
+
+.navbar-item-after2::after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 2px;
+  background-color: #f2f559;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.navbar-item:hover::after {
+  width: 100%;
+} */
+
+.btn-get .navbar-link {
+  background-color: #198C36;
+  padding: 15px 25px;
+  border-radius: 35px;
+}
+
+.hero-content .row {
+  align-items: center;
+}
+
+.hero-des {
+  width: 492px;
+}
+
+.hero-title {
+  font-family: "Recoleta";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  width: 391px;
+  margin-bottom: 18px;
+}
+
+.hero-text {
+  width: 475px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+/* story */
+#story {
+  padding: 120px 0;
+}
+
+.story-content {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story-img
+.story-des {
+  flex-basis: 50%;
+}
+
+.story-title {
+  color: #163A24;
+  margin-bottom: 27px;
+}
+
+.story-text {
+  width: 380px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #163A24;
+}
+
+/* partner */
+.partner {
+  padding-top: 114px;
+}
+
+.partner-title {
+  text-align: center;
+  color: #163A24;
+  margin-bottom: 66px;
+}
+
+.partner-list {
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#costumers {
+  padding-top: 66px;
+  padding-bottom: 120px;
+  background-color: #163A24;
+  color: #fff;
+}
+
+.costumers-title {
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.costumers-list {
+  list-style: none;
+  justify-content: space-between;
+}
+
+.costumers-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.costumers-text {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #FBFAF7; 
+  margin: 0px ;  
+}
+ 
+/* employess */
+#employess {
+  background-color: #F2EFE6;
+  padding-top: 120px;
+  padding-bottom: 135px;
+}
+
+.employess-title {
+  text-align: center;
+  color: #163A24;
+  margin-bottom: 27px;
+}
+
+.employess-tex {
+  width: 760px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #163A24;
+  margin: 2px auto;
+  text-align: center;
+}
+
+/* information */
+#information {
+  padding-top: 180px;
+}
+
+.scenes {
+  padding: 0 130px;
+}
+
+.scenes-des {
+  width: 380px;
+  height: 227px;
+  margin-top: 93px;
+  margin-right: 70px;
+  margin-bottom: 27px;
+}
+
+.scenes-des
+.scenes-img {
+  flex-basis: 50%;
+}
+
+.scenes-title {
+  color: #163A24;
+}
+
+.scenes-text {
+  font-size: 18px;
+  line-height: 27px;
+  color: #163A24;
+}
+
+.intrest {
+  padding: 120px 0;
+}
+
+.intrest-title {
+  text-align: center;
+  color: #163A24;
+  margin-bottom: 26px;
+}
+
+.intrest-text {
+  text-align: center;
+  color: #163A24;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 18px;
+}
+
+.intrest-part {
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.intrest-company {
+  width: 353px;
+  height: 393px;
+  background-color: #FBFAF7;
+  box-shadow: 5px 5px 20px #E9E4D5;
+  border-radius: 15px;
+}
+
+.intrest-success {
+  width: 353px;
+  height: 430px;
+  background-color: #FBFAF7;
+  box-shadow: 5px 5px 20px #E9E4D5;
+  border-radius: 15px;
+}
+
+.intrest-landscape {
+  width: 353px;
+  height: 393px;
+  background-color: #FBFAF7;
+  box-shadow: 5px 5px 20px #E9E4D5;
+  border-radius: 15px;
+}
+
+.intrest-img {
+  padding-top: 50px;
+  padding-left: 40px;
+}
+
+.part-title {
+  font-family: "Recoleta";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 31px;
+  color: #163A24;
+  margin-top: 20px;
+  margin-bottom: 23px;
+  padding-left: 40px;
+}
+
+.intrest-sec {
+  padding-left: 20px;
+}
+
+.intrest-item {
+  font-size: 16px;
+  line-height: 22px;
+  color: #163A24;
+  margin-bottom: 15px;
+}
+
+/* easy */
+#easy {
+  background-color: #F2EFE6;
+  border-radius: 0px;
+}
+
+.easy-box {
+  padding: 120px 0;
+}
+
+.easy-title {
+  font-family: "Recoleta";
+  text-align: center;
+  color: #163A24;
+  margin-bottom: 26px;
+}
+
+.easy-text {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #163A24;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.easy-button {
+  text-align: center;
+}
+
+.easy-box button {
+  width: 244px;
+  height: 52px;
+  background-color: #198C36;
+  border-radius: 160px;
+  border: none; 
+}
+
+.easy-link {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FBFAF7;
+  text-decoration: none;
+}
+
+/* resource */
+.resource-box {
+  padding: 110px 120px;
+}
+
+.resource-des {
+  padding-top: 130px;
+  padding-right: 124px;
+}
+
+.resource-title {
+  font-family: "Recoleta";
+  color: #163A24;
+  margin-bottom: 25px;
+}
+
+.resource-text {
+  font-size: 18px;
+  line-height: 27px;
+  color: #163A24;
+}
+
+.resource-des button {
+  width: 191px;
+  height: 52px;
+  background-color: #198C36;
+  border-radius: 160px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.resource-link {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FBFAF7;
+  text-decoration: none;
+}
+
+/* get */
+#get {
+  height: 415px;
+  background-image: url('/img/backfont.svg');
+}
+
+.big-con {
+  width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.contain {
+  width: 550px;
+  height: 175px;
+}
+
+.get-title {
+  font-family: "Recoleta";
+  padding-top: 114px;
+  text-align: center;
+  color: #FBFAF7; 
+  margin-bottom: 28px;
+}
+
+.get-text {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #FBFAF7;
+}
+
+.get-button {
+  text-align: center;
+}
+
+.get-button button {
+  width: 258px;
+  height: 52px;
+  background-color: #FAB5A0;
+  border-radius: 160px;
+  text-align: center;
+}
+
+.get-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #163A24;
+  text-decoration: none;
+}
+
+.image-right {
+  padding-right: 90px;
+}
+
+/* date */
+#date {
+  background-color: #F2EFE6;
+}
+
+.email {
+  padding: 60px 0px;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+
+.stay-title {
+  font-family: "Recoleta";
+  color: #163A24;
+  margin-top: 0px;
+  margin-bottom: 26px;
+}
+
+.stay-text {
+  font-size: 18px;
+  line-height: 27px;
+  color: #163A24;
+} 
+
+.sign-img {
+  margin-bottom: 11px;
+}
+
+.sign-text {
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #163A24;
+}
+
+.text-link {
+  font-size: 14px;
+  line-height: 21px;
+  color: #198C36;
+  text-decoration: none;
+}
+
+/* footer */
+.footer-info {
+  padding-top: 45px;
+  padding-bottom: 25px;
+  justify-content: space-between;
+}
+
+.clersky {
+  padding-left: 15px;
+}
+
+.clersky-logo {
+  margin-bottom: 66px;
+}
+
+.clersky-address {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #163A24;
+}
+
+.address-link {
+  text-decoration: none;
+}
+
+.summary-people {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #163A24;
+}
+
+.images {
+  text-align: end;
+}
+
+.images-img {
+  margin-left: 14px;
+  margin-bottom: 76px;
+}
+
+.info {
+  padding-right: 25px;
+}
+
+.information-list {
+  margin: 0;
+}
+
+.information-item {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #198C36;
+  margin-left: 14px;
+  list-style: none;
+}
+
+.information-gdpr {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: right;
+  color: #198C36;
+  margin-left: 14px;
+}
+
+.information-link {
+  text-decoration: none;
+}
